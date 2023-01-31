@@ -1,4 +1,4 @@
-﻿from math import *
+from math import *
 from random import *
 
 ##0
@@ -98,12 +98,13 @@ from random import *
 #запросить 5 имен и определить самое большое и самое маленькое среди них
 
 s = str(input(""))
-l = s.split()
+l = s.split() #подсчитывает количество символов до пробела
  
-lon = max(l, key=len)
+lon = max(l, key=len) #подсчитывает строку
 short = min(l, key=len)
  
 print(f'Longest: {lon}, shortest: {short}')
 print()
 print()
+
 
