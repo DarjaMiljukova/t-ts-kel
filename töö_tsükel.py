@@ -1,7 +1,7 @@
 from math import *
 from random import *
 
-##0
+#0
 
 #snäkid = ["Kartulikrõpsud", "Šokolaadikommid", "Närimiskumm", "Küpsised"]
 #hind = [1.50, 0.75, 0.50, 1.00]
@@ -38,7 +38,7 @@ from random import *
 #numbers = []
 
 #for i in range(4):
-#    num = int(input("Sisesta number {}: ".format(i + 1)))
+#    num = int(input("Sisesta number {}: ".format(i + 1))) # переход на одну цифру после заполнения строки
 #    numbers.append(num)
 
 #print()
@@ -56,7 +56,7 @@ from random import *
 
 #i=0
 #while i<1:
-#  numbers = []
+#  numbers = [] 
 #  print("Sisesta number:")
 #  for i in range(4):
 #    number = int(input())
@@ -79,14 +79,14 @@ from random import *
 ##20 3
 
 #while True:
-#  numbers = []
+#  numbers = [] #
 #  print("Sisesta number:")
-#  for i in range(4):
+#  for i in range(4): # повторяет print 4 раза
 #    number = int(input())
 #    numbers.append(number)
 
-#  rohkem = max(numbers)
-#  väiksem = min(numbers)
+#  rohkem = max(numbers) # отвечает за определение большего числа
+#  väiksem = min(numbers) # отвечает за определение меньшего числа
 #  print("Kõige rohkem on: ", rohkem)
 #  print("Väikseim arv on: ", väiksem)
 #  break
@@ -97,14 +97,15 @@ from random import *
 
 #запросить 5 имен и определить самое большое и самое маленькое среди них
 
+
+print("Sisestage 5 nime: ")
 s = str(input(""))
 l = s.split() #подсчитывает количество символов до пробела
  
-lon = max(l, key=len) #подсчитывает строку
-short = min(l, key=len)
+su = max(l, key=len) #подсчитывает длину строки
+väi = min(l, key=len)
  
-print(f'Longest: {lon}, shortest: {short}')
+print(f'suur: {su}, väike: {väi}')
 print()
 print()
-
 
